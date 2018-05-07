@@ -115,9 +115,9 @@ let a = {
   [mySymbol]: 'Hello!'
 };
 
-// 第三种写法
-let a = {};
-Object.defineProperty(a, mySymbol, { value: 'Hello!' });
+// 第三种写法 这种写法不会生效
+// let a = {};
+// Object.defineProperty(a, mySymbol, { value: 'Hello!' });
 
 // 以上写法都得到同样结果
 a[mySymbol] // "Hello!"
